@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solusi Sampah Kabupaten OKU Selatan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .container {
+            max-width: 860px;
+            margin: auto;
+            padding: 20px;
+        }
+		
+			
+		/* Gaya untuk slideshow */
+        .slideshow-container {
+            max-width: 70%;
+            position: relative;
+            margin: auto;
+        }
+
+        .slides {
+            display: none;
+			width: 100%; /* Ukuran gambar mengikuti kontainer */
+            height: 300px; /* Tetapkan tinggi konstan */
+            object-fit: cover; /* Potong gambar agar sesuai ukuran tanpa distorsi */
+        }
+
+        img {
+            width: 100%;			
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Gaya untuk video bagian */
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+        }
+        
+		/* Gaya untuk footer */
+        footer {
+            display: flex;
+            justify-content: center; /* Mengatur teks ke tengah secara horizontal */
+            align-items: center; /* Mengatur teks ke tengah secara vertikal */
+            height: 100px; /* Tinggi footer */
+            background-color: #f4f4f4; /* Warna latar belakang footer */
+            font-size: 16px; /* Ukuran teks */
+            color: #333; /* Warna teks */
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <h1>SELAMAT DATANG</h1>
+        <p>Solusi Penanganan Limbah Sampah Di Kabupaten OKU Selatan</p>
+		<p> </p>
+    </header>
+
+	<!-- Slideshow -->
+    <div class="slideshow-container">
+        <img class="slides active" src="gambar 1.jpg" alt="Gambar 1">
+        <img class="slides" src="gambar 2.jpg" alt="Gambar 2">
+        <img class="slides" src="gambar 3.jpg" alt="Gambar 3">
+		<img class="slides" src="gambar 4.jpg" alt="Gambar 4">
+		<img class="slides" src="gambar 5.jpg" alt="Gambar 5">
+		<img class="slides" src="gambar 6.jpg" alt="Gambar 6">
+		<img class="slides" src="gambar 7.jpg" alt="Gambar 7">
+    </div>
+    
+    <script>
+        // Script untuk slideshow otomatis
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides");
+            slides.forEach(slide => slide.classList.remove("active"));
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 3000); // 3 detik
+        }
+
+        showSlides();
+    </script>
+
+	<div class="container">		          
+			<h2> SUMBER MASALAH </h2>
+			<p> Warga Desa Bendi Kecamatan Buya Rawan sudah lama mengeluhkan bau tak sedap akibat dari tumpukan sampah ditempat pembuangan akhir, ironisnya TPA tersebut lokasinya berada di tepi jalan raya menuju Ranau yang sangat menganggu penciuman, bau tak sedap yang mengakibatkan pencemaran polusi udara. </p>
+			<p> Terbukti sampai saat ini lokasi pembuangan akhir sampah dari Kota Muaradua setiap harinya masih dipergunakan. Pemerintah Kabupaten OKU Selatan sendiri nampaknya sampai detik ini, belum memiliki lokasi baru yang siap untuk dijadikan lokasi tempat pembuangan akhir sampah.</p>
+			<h2> SOLUSI </h2>
+			<p> Apabila permasalahan sampah ini tidak segera diatasi dengan tuntas dan berkelanjutan, ini akan menimbulkan masalah, kesehatan, pencemaran lingkungan akan menjadi preseden buruk bagi kota OKU selatan. </p>
+        <!-- </div> -->
+	        <h2> SUMBER MASALAH </h2>
+			<p> Warga Desa Bendi Kecamatan Buya Rawan sudah lama mengeluhkan bau tak sedap akibat dari tumpukan sampah ditempat pembuangan akhir, ironisnya TPA tersebut lokasinya berada di tepi jalan raya menuju Ranau yang sangat menganggu penciuman, bau tak sedap yang mengakibatkan pencemaran polusi udara. </p>
+			<p> Terbukti sampai saat ini lokasi pembuangan akhir sampah dari Kota Muaradua setiap harinya masih dipergunakan. Pemerintah Kabupaten OKU Selatan sendiri nampaknya sampai detik ini, belum memiliki lokasi baru yang siap untuk dijadikan lokasi tempat pembuangan akhir sampah.</p>
+				
+		<!-- Video Section -->
+        <div class="video-section">
+            <h2>Video TPA</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+        </div>
+		
+		<h2> SOLUSI </h2>
+		<p> Apabila permasalahan sampah ini tidak segera diatasi dengan tuntas dan berkelanjutan, ini akan menimbulkan masalah, kesehatan, pencemaran lingkungan akan menjadi preseden buruk bagi kota OKU selatan. </p>
+		<p> Kami, PT. XXX XXX XXXX, memiliki solusi tepat guna untuk menuntaskan permasalahn sampah di kabupaten OKU Selatan, adapun skema operasional manajeman sampah sebagai berikut : </p>
+		
+		<div class="image-section">                      
+		    <img src="Gambar Skema.png" alt="Gambar Skema">
+		</div>	
+    </div>
+   
+    <footer>
+        <p>&copy; 2025 Sampahpun Harus Di Atur. Semua Hak Dilindungi.</p>
+    </footer>
+	
+</body>
+</html>
